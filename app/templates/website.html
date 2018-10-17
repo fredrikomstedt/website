@@ -15,34 +15,41 @@
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="0" />
 	</head>
-	<body>
-        <div class='text-center'>
-            <h1>Fredrik Omstedt</h1>
-            <a href='http://www.github.com/xaril'>github</a>
-            <p>fredrik@omstedt.com</p>
-            <!--Insert buttons to different parts of website-->
+	<body class='parallax backgroundImage'>
+
+        <div class='text-center website-top'>
+            <div class='title'>Fredrik Omstedt</div>
+            <div style='padding-bottom: 10px'>
+                <img class='github' src='static/pictures/github.png'></img>
+                <a href='http://www.github.com/xaril' target='_blank'><b>xaril</b></a>
+            </div>
+            <p><b>fredrik@omstedt.com</b></p>
+            <div class='container-fluid buttons'>
+                <div class='row'>
+                    <button id='about-me-btn'><b>About Me</b></button>
+                    <button id='experience-and-qualifications-btn'><b>Experience and Qualifications</b></button>
+                    <button id='portfolio-btn'><b>Portfolio</b></button>
+                </div>
+            </div>
         </div>
-        <div id='about-me'>
-            <h3>About Me</h3>
-            <div class='container-fluid'>
+        <div id='about-me' class='website-part'>
+            <div class='title'>About Me</div>
+            <div class='container-fluid content'>
                 <div class='row'>
                     <div class='col-xs-8'>
-                        <p id='about-me-text'></p>
+                        <p class='pull-left' id='about-me-text'></p>
                     </div>
                     <div class='col-xs-4'>
-                        <img id='about-me-image' src='/static/pictures/about-me-0.jpg'></img>
+                        <img class='pull-right' id='about-me-image' src='/static/pictures/about-me-0.jpg'></img>
                     </div>
                 </div>
             </div>
         </div>
-        <div id='experience-and-qualifications'>
-            <h3>Experience and Qualifications</h3>
+        <div id='experience-and-qualifications' class='website-part'>
+            <div class='title'>Experience and Qualifications</div>
         </div>
-        <div id='portfolio'>
-            <h3>Portfolio</h3>
-        </div>
-        <div id='contact-me'>
-            <h3>Contact</h3>
+        <div id='portfolio' class='website-part'>
+            <div class='title'>Portfolio</div>
         </div>
 	</body>
 </html>

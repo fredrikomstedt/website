@@ -9,8 +9,29 @@ var CURRENT_IMAGE = 0;
 
 //Main function
 $(document).ready(function() {
+    initiateTop();
     initiateAboutMe();
 });
+
+function initiateTop() {
+    $("#about-me-btn").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#about-me").offset().top},
+        'slow');
+    });
+
+    $("#experience-and-qualifications-btn").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#experience-and-qualifications").offset().top},
+        'slow');
+    });
+
+    $("#portfolio-btn").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#portfolio").offset().top},
+        'slow');
+    });
+}
 
 function getAge(dateString) {
     var today = new Date();
@@ -36,9 +57,8 @@ function startAboutMeImageFades() {
     setInterval(function() {
         $("#about-me-image").fadeOut(500, function() {
             CURRENT_IMAGE = (CURRENT_IMAGE + 1) % NUMBER_OF_IMAGES;
-            console.log('/static/pictures/about-me-' + CURRENT_IMAGE + '.jpg');
             $("#about-me-image").attr('src', '/static/pictures/about-me-' + CURRENT_IMAGE + '.jpg');
             $("#about-me-image").fadeIn(500);
         });
-    }, 5000);
+    }, 10000);
 }

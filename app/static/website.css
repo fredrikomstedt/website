@@ -1,1 +1,86 @@
+.website-top {
+    padding-top: 20%;
+    color: #fbfff1;
+    font-family: unisans;
+    min-height: 100%;
+}
 
+@font-face {
+    font-family: unisans;
+    src: url('/static/uni-sans/UniSansThin.otf');
+}
+
+.website-top .title {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.website-top .buttons {
+    padding-top: 15%;
+}
+
+.website-top .buttons button {
+    margin: 0% 5%;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.website-top .buttons button:hover {
+    background-color: #5d91bf;
+}
+
+.github {
+    padding: 2px;
+    width: 32px;
+}
+
+.website-top a {
+    font-size: 16px;
+    color: #fbfff1;
+}
+
+.website-part {
+    background-color: #fbfff1;
+    margin: 10% 12.5%;
+    min-height: 90%;
+    padding: 3% 5%;
+    opacity: 75%;
+}
+
+.website-part img {
+    max-height: 400px;
+}
+
+.website-part .title {
+    text-align: center;
+    font-size: 28px;
+    color: #3d322d;
+    border-bottom: 1px solid #3d322d;
+    padding-bottom: 5px;
+}
+
+.website-part .content {
+    padding-top: 10px;
+}
+
+.backgroundImage {
+    background-image: url("/static/pictures/background-0.jpg");
+}
+
+.parallax {
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
