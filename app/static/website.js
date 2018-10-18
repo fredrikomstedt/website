@@ -48,7 +48,32 @@ function initiateAboutMe() {
     //Get my current age
     var age = getAge('1997-03-16');
     //Show text about me
-    var aboutMeText = "Hi, I'm Fredrik! I'm a " + age + " year old guy from Sweden, currently living in Stockholm. "
+    var aboutMeText = "Hi, I'm Fredrik! I'm a " + age + " year old guy from" +
+     " Sweden, currently living in Stockholm, a place I've lived all my life." +
+     " \n \n Growing up with my parents, my brother and a vast array of pets, " +
+     "I've always had a passion for video games. I got my first GameBoy at 5 " +
+     "and since then, I've been hooked. Countless hours have been spent on " +
+     "games such as Runescape, World of Warcraft, Pokémon, Jak and Daxter, " +
+     "Guitar Hero, and so on... At around 11 years old, I also realized how " +
+     "fun it is to make games, which in turn led me to start programming. " +
+     "It is definitely one of the cornerstones of who I am.\n \n " +
+     "Another important part in my life is music. At 8 years old, I got a guitar as a " +
+     "christmas present, and I immediately started playing. I started taking " +
+     "lessons, and only found it more and more enjoying. After a few years, I " +
+     "decided to get an electric guitar, and from there on out my love for rock " +
+     "and metal music evolved. Currently, I listen to a lot of Metallica, Five " +
+     "Finger Death Punch and Alter Bridge, often while jamming along on my Explorer.\n \n" +
+     "Even though the topics above are really important to me, there is nothing " +
+     "I love more than golf. It is truly a sport that I can't get enough of, " +
+     "whether I am out playing, watching a major, or grinding on the putting green. " +
+     "I started playing when I was about 9, but got really into it when I was 15. " +
+     "I am now a single handicap, working my way down towards playing scratch.\n\n" +
+     "When I started studying at KTH, I realized how fun it can be to take part " +
+     "in the student life and all its activities. During the years I've studied, " +
+     "I've helped new students get accustomed to KTH during their first weeks, " +
+     "helped create fun parties and pubs for other students, and more! It has " +
+     "been a great experience that has resulted in lots of personal growth, and " +
+     "a bunch of new friends.";
     $("#about-me-text").text(aboutMeText);
     startAboutMeImageFades();
 }
