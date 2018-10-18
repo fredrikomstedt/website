@@ -4,7 +4,7 @@
 /* Author: Fredrik Omstedt
 /* Date: 2018-10-16
 /*/
-var NUMBER_OF_IMAGES = 2;
+var NUMBER_OF_IMAGES = 5;
 var CURRENT_IMAGE = 0;
 
 //Main function
@@ -16,19 +16,19 @@ $(document).ready(function() {
 function initiateTop() {
     $("#about-me-btn").click(function() {
         $('html,body').animate({
-            scrollTop: $("#about-me").offset().top},
+            scrollTop: $("#about-me").offset().top - parseInt($("#about-me").css("margin-top"))/4},
         'slow');
     });
 
     $("#experience-and-qualifications-btn").click(function() {
         $('html,body').animate({
-            scrollTop: $("#experience-and-qualifications").offset().top},
+            scrollTop: $("#experience-and-qualifications").offset().top - parseInt($("#experience-and-qualifications").css("margin-top"))/4},
         'slow');
     });
 
     $("#portfolio-btn").click(function() {
         $('html,body').animate({
-            scrollTop: $("#portfolio").offset().top},
+            scrollTop: $("#portfolio").offset().top - parseInt($("#portfolio").css("margin-top"))/4},
         'slow');
     });
 }
