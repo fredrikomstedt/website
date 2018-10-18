@@ -82,8 +82,24 @@
     font-weight: 300;
 }
 
-.backgroundImage {
+.backgroundImage0 {
     background-image: url("/static/pictures/background-0.jpg");
+    transition: background-image 0.5s;
+}
+
+.backgroundImage1 {
+    background-image: url("/static/pictures/background-1.jpg");
+    transition: background-image 0.5s;
+}
+
+.backgroundImage2 {
+    background-image: url("/static/pictures/background-2.jpg");
+    transition: background-image 0.5s;
+}
+
+.backgroundImage3 {
+    background-image: url("/static/pictures/background-3.jpg");
+    transition: background-image 0.5s;
 }
 
 .parallax {

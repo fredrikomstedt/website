@@ -20,9 +20,9 @@ function initiateTop() {
         'slow');
     });
 
-    $("#experience-and-qualifications-btn").click(function() {
+    $("#cv-btn").click(function() {
         $('html,body').animate({
-            scrollTop: $("#experience-and-qualifications").offset().top - parseInt($("#experience-and-qualifications").css("margin-top"))/4},
+            scrollTop: $("#cv").offset().top - parseInt($("#cv").css("margin-top"))/4},
         'slow');
     });
 
@@ -30,6 +30,23 @@ function initiateTop() {
         $('html,body').animate({
             scrollTop: $("#portfolio").offset().top - parseInt($("#portfolio").css("margin-top"))/4},
         'slow');
+    });
+
+    document.addEventListener('scroll', function() {
+        var y = $(this).scrollTop();
+        var aboutMe = $("#about-me").offset().top - parseInt($("#about-me").css("margin-top"));
+        var cv = $("#cv").offset().top - parseInt($("#cv").css("margin-top"));
+        var portfolio = $("#portfolio").offset().top - parseInt($("#portfolio").css("margin-top"));
+
+        if(y < aboutMe) {
+            $('body').css('background-image', 'url("/static/pictures/background-0.jpg")');
+        } else if(y < cv) {
+            $('body').css('background-image', 'url("/static/pictures/background-1.jpg")');
+        } else if(y < portfolio) {
+            $('body').css('background-image', 'url("/static/pictures/background-2.jpg")');
+        } else if(y >= portfolio) {
+            $('body').css('background-image', 'url("/static/pictures/background-3.jpg")');
+        }
     });
 }
 
