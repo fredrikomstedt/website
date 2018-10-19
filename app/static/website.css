@@ -76,10 +76,36 @@
 }
 
 .website-part .content {
-    white-space: pre-line;
     font-family: brandon-grotesque, sans-serif;
     font-style: normal;
     font-weight: 300;
+}
+
+.website-part .aboutMe {
+    white-space: pre-line;
+}
+
+.website-part .content .cv-title {
+    font-family: unisans;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    color: #3d322d;
+}
+
+.website-part .content .cv-list {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.website-part .content .cv-work {
+    font-family: unisans;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: #3d322d;
 }
 
 .backgroundImage0 {
