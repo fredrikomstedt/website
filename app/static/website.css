@@ -83,6 +83,13 @@
     right: 0;
 }
 
+.website-part .google-play {
+    border: 0px solid #87919e;
+    max-height: 70px;
+    max-width: 100%;
+    left: 0;
+}
+
 .website-part .title {
     font-family: unisans;
     font-style: normal;
@@ -104,7 +111,7 @@
     white-space: pre-line;
 }
 
-.website-part .content .cv-title {
+.website-part .content .content-title {
     font-family: unisans;
     font-style: normal;
     font-weight: 1000;
@@ -119,7 +126,7 @@
     padding-right: 15px;
 }
 
-.website-part .content .cv-work {
+.website-part .content .content-small-title {
     font-family: unisans;
     font-weight: 400;
     font-size: 18px;
@@ -127,10 +134,16 @@
     color: #3d322d;
 }
 
-.website-part .content .contact-text {
+.website-part .content .content-text {
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.website-part .content .portfolio-entry {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    height: 400px;
 }
 
 .backgroundImage0 {
