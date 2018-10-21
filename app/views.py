@@ -13,3 +13,7 @@ import traceback
 @app.route('/index')
 def index():
     return render_template('website.html')
+
+@app.route('/send_message', methods=['POST'])
+def send_message():
+    return jsonify({}), 200

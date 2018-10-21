@@ -151,7 +151,7 @@
             <div class='title'>Contact Me</div>
             <div class='content'>
                 <p class='contact-text'>If you wish to contact me, send me an email at fredrik@omstedt.com, or use the form below.</p>
-                <form class='contact-text' action='/send_message' method='post'>
+                <div class='contact-text'>
                     <div class="form-group">
                         <label for="contact-name" class='cv-work'>Name</label>
                         <input type="text" class="form-control" id="contact-name" placeholder="Name" required>
@@ -162,12 +162,13 @@
                     </div>
                     <div class="form-group">
                         <label for="contact-text" class='cv-work'>Message</label>
-                        <textarea class="form-control" id="contact-text" rows="3" required></textarea>
+                        <textarea class="form-control" id="contact-message" rows="3" required></textarea>
                     </div>
                     <div class='text-center'>
-                        <button class='centered' id='contact-button' type='submit'>Send Message</button>
+                        <button id='contact-button' type='submit'>Send Message</button>
                     </div>
-                </form>
+                    <div id='contact-response'></div>
+                </div>
             </div>
         </div>
 	</body>

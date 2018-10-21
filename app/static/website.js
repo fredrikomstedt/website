@@ -11,6 +11,7 @@ var CURRENT_IMAGE = 0;
 $(document).ready(function() {
     initiateTop();
     initiateAboutMe();
+    initiateContactMe();
 });
 
 function initiateTop() {
@@ -112,4 +113,36 @@ function startAboutMeImageFades() {
             $("#about-me-image").fadeIn(500);
         });
     }, 10000);
+}
+
+function initiateContactMe() {
+    $("#contact-button").on("click", function() {
+        if($("#contact-name").val() === "") {
+            $("#contact-response").text("Please specify your name.");
+            return;
+        } else if($("#contact-email").val() === "") {
+            $("#contact-response").text("Please specify your email address.");
+            return;
+        } else if($("#contact-message").val() === "") {
+            $("#contact-response").text("Please write a message.");
+            return;
+        }
+
+        $.ajax({
+    		url: '/send_message',
+    		contentType: 'application/json',
+    		method: 'post',
+    		data: {
+                name: $("#contact-name").val(),
+                email: $("#contact-email").val(),
+                message: $("#contact-message").val()
+            },
+            success: function(response) {
+                $("#contact-response").text("Your message was sent!");
+            },
+            error: function(response) {
+                $("#contact-response").text("Something went wrong, please try again.");
+            }
+	   });
+    });
 }
