@@ -146,6 +146,36 @@
     height: 400px;
 }
 
+.website-footer {
+    background-color: #fbfff1;
+    margin-top: 5%;
+    max-height: 5%;
+    padding-bottom: 5%;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.website-footer button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-family: unisans;
+    font-weight: 600;
+}
+
+.website-footer button:hover {
+    background-color: #5d91bf;
+    color: #fbfff1;
+}
+
 .backgroundImage0 {
     background-image: url("/static/pictures/background-0.jpg");
     transition: background-image 0.5s;

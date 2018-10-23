@@ -12,6 +12,7 @@ $(document).ready(function() {
     initiateTop();
     initiateAboutMe();
     initiateContactMe();
+    initiateFooter();
 });
 
 function initiateTop() {
@@ -144,5 +145,13 @@ function initiateContactMe() {
                 $("#contact-response").text("Something went wrong, please try again.");
             }
 	   });
+    });
+}
+
+function initiateFooter() {
+    $("#back-to-top-button").click(function() {
+        $('html,body').animate({
+            scrollTop: 0},
+        'slow');
     });
 }
