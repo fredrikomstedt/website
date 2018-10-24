@@ -133,11 +133,11 @@ function initiateContactMe() {
     		url: '/send_message',
     		contentType: 'application/json',
     		method: 'post',
-    		data: {
-                name: $("#contact-name").val(),
-                email: $("#contact-email").val(),
-                message: $("#contact-message").val()
-            },
+    		data: JSON.stringify({
+                'name': $("#contact-name").val(),
+                'email': $("#contact-email").val(),
+                'message': $("#contact-message").val()
+            }),
             success: function(response) {
                 $("#contact-response").text("Your message was sent!");
             },
