@@ -10,6 +10,35 @@
     src: url('/static/uni-sans/UniSansThin.otf');
 }
 
+.dont-print {
+
+}
+
+@media print {
+    @page {
+        margin: 1.5cm;
+    }
+
+    .website-part {
+        background-color: #fff;
+        width: 100% !important;
+        margin: 2% 0% !important;
+        color: #000;
+    }
+
+    .dont-print {
+        display: none;
+    }
+
+    .only-print {
+        display: block !important;
+    }
+}
+
+.only-print {
+    display: none;
+}
+
 .website-top .title {
     font-size: 40px;
     padding-bottom: 10px;
@@ -71,6 +100,7 @@
     min-height: 90%;
     padding: 3% 5%;
     border-radius: 5px;
+    color: #3d322d;
 }
 
 .website-part img {
@@ -90,6 +120,13 @@
     left: 0;
 }
 
+.website-part .cv-title-img {
+    max-height: 160px;
+    left: 10;
+    top: 10;
+    position: inherit;
+}
+
 .website-part .title {
     font-family: unisans;
     font-style: normal;
@@ -99,6 +136,28 @@
     color: #3d322d;
     border-bottom: 1px solid #87919e;
     padding-bottom: 5px;
+}
+
+.website-part .cv-title {
+    color: #3d322d;
+    border-bottom: 1px solid #87919e;
+    padding-bottom: 20px;
+}
+
+.website-part .cv-title .cv-title-title {
+    font-family: unisans;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    color: #3d322d;
+}
+
+.website-part .cv-title .cv-title-content {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .website-part .content {

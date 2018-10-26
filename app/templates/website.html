@@ -15,12 +15,13 @@
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="0" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Fredrik Omstedt</title>
 	</head>
 	<body class='parallax backgroundImage0'>
-        <div class='text-center website-top'>
+        <div class='text-center website-top dont-print'>
             <div class='title'>Fredrik Omstedt</div>
             <div style='padding-bottom: 10px'>
-                <img class='github' src='static/pictures/github.png'></img>
+                <a href='http://www.github.com/xaril' target='_blank'><img class='github' src='static/pictures/github.png'></img></a>
                 <a href='http://www.github.com/xaril' target='_blank'><b>xaril</b></a>
             </div>
             <p><b>fredrik@omstedt.com</b></p>
@@ -33,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div id='about-me' class='website-part'>
+        <div id='about-me' class='website-part dont-print'>
             <div class='title'>About Me</div>
             <div class='container-fluid content aboutMe'>
                 <div class='row'>
@@ -41,15 +42,25 @@
                         <p class='pull-left' id='about-me-text'></p>
                     </div>
                     <div class='col-xs-4'>
-                        <div class='image-background'>
-                            <img class='pull-right' id='about-me-image' src='/static/pictures/about-me-0.jpg'></img>
-                        </div>
+                        <img class='pull-right' id='about-me-image' src='/static/pictures/about-me-0.jpg'></img>
                     </div>
                 </div>
             </div>
         </div>
         <div id='cv' class='website-part'>
-            <div class='title'>CV</div>
+            <div class='title dont-print'>CV</div>
+            <div class='only-print cv-title'>
+                <div class='row'>
+                    <div class='col-xs-3 only-print'><img class='cv-title-img only-print' src='/static/pictures/about-me-0.jpg'/></div>
+                    <div class='col-xs-6 only-print text-center'>
+                        <div class='only-print cv-title-title'>Fredrik Omstedt</div>
+                        <div class='only-print cv-title-content'>
+                            <p>fredrik@omstedt.com<br>0790779302<br>www.omstedt.com</p>
+                        </div>
+                    </div>
+                    <div class='col-xs-3 only-print'></div>
+                </div>
+            </div>
             <div class='content'>
                 <div>
                     <div class='content-title'>Professional Experience</div>
@@ -69,6 +80,14 @@
                             </div>
                             <p>CTO and Co-founder.</p>
                             <p>Designing and programming games.</p>
+                        </div>
+                        <div>
+                            <div class='row'>
+                                <div class='col-xs-6 content-small-title'>SIPRI - Stockholm International Peace Research Institute</div>
+                                <div class='col-xs-6 text-right content-small-title'>DEC 2016 - JUN 2017</div>
+                            </div>
+                            <p>As part of a school project, helped recreate a database and an interface to handle and analyze data in the database.</p>
+                            <p>Worked as back end lead developer, writing a back end in Java using the Spring framework.</p>
                         </div>
                         <div>
                             <div class='row'>
@@ -135,16 +154,13 @@
                         <p>Club Champion of the 2013 Lillängen Short Games.</p>
                         <p>Internships at DICE in October 2009 and 2010.</p>
                     </div>
-                    <div class='content-title'>Languages</div>
-                    <div class='cv-list'>
-                        <p>Swedish - native.</p>
-                        <p>English - fluent.</p>
-                        <p>French - basic.</p>
-                    </div>
+                </div>
+                <div class='text-center dont-print'>
+                    <button id='download-cv-button'>Download CV</button>
                 </div>
             </div>
         </div>
-        <div id='portfolio' class='website-part'>
+        <div id='portfolio' class='website-part dont-print'>
             <div class='title'>Portfolio</div>
             <div class='container-fluid content'>
                 <div class='content-text'>
@@ -190,7 +206,7 @@
                 </div>
             </div>
         </div>
-        <div id='contact-me' class='website-part'>
+        <div id='contact-me' class='website-part dont-print'>
             <div class='title'>Contact Me</div>
             <div class='content'>
                 <p class='content-text'>If you wish to contact me, send me an email at fredrik@omstedt.com, or use the form below.</p>
@@ -214,7 +230,7 @@
                 </div>
             </div>
         </div>
-        <div class='website-footer'>
+        <div class='website-footer dont-print'>
             <div class='row'>
                 <div class='col-xs-10'>© Fredrik Omstedt 2018. This website was created by me, Fredrik Omstedt. All images were taken by or taken of me. The only exceptions are the GitHub logo, the Google Play buttons, and the images of Valkyr Games' applications. The texts on this website reflect my personal opinions, and may not represent the opinions of any employer, organization or other entity I am associated with.</div>
                 <div class='col-xs-2 text-center'>

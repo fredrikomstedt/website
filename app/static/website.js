@@ -11,6 +11,7 @@ var CURRENT_IMAGE = 0;
 $(document).ready(function() {
     initiateTop();
     initiateAboutMe();
+    initiateCV();
     initiateContactMe();
     initiateFooter();
 });
@@ -114,6 +115,12 @@ function startAboutMeImageFades() {
             $("#about-me-image").fadeIn(500);
         });
     }, 10000);
+}
+
+function initiateCV() {
+    $("#download-cv-button").on("click", function() {
+        window.print();
+    });
 }
 
 function initiateContactMe() {
