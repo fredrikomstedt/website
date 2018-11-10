@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+}
+
 .about-me-wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -75,7 +80,8 @@
     display: none;
 }
 
-@media screen and (max-width: 921px) {
+@media screen and (max-width: 1024px) {
+
     .about-me-wrapper .image {
         grid-row: 1;
         grid-column: span 12;
@@ -305,33 +311,15 @@
     color: #fbfff1;
 }
 
-.backgroundImage0 {
-    background-image: url("/static/pictures/background-0.jpg");
-    transition: background-image 0.5s;
-}
-
-.backgroundImage1 {
-    background-image: url("/static/pictures/background-1.jpg");
-    transition: background-image 0.5s;
-}
-
-.backgroundImage2 {
-    background-image: url("/static/pictures/background-2.jpg");
-    transition: background-image 0.5s;
-}
-
-.backgroundImage3 {
-    background-image: url("/static/pictures/background-3.jpg");
-    transition: background-image 0.5s;
-}
-
 .parallax {
     /* Full height */
     height: 100%;
 
     /* Create the parallax scrolling effect */
+    background-image: url("/static/pictures/background-0.jpg");
+    transition: background-image 0.5s;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
