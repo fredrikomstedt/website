@@ -152,6 +152,11 @@ function initiateContactMe() {
                 $("#contact-response").text("Something went wrong, please try again.");
             }
 	   });
+       var btn = $(this);
+       btn.prop('disabled', true);
+       window.setTimeout(function() {
+           btn.prop('disabled', false);
+       }, 5000);
     });
 }
 
