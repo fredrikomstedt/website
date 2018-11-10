@@ -23,25 +23,13 @@ def index():
 def send_message():
     status_code = 200
     data = request.get_json()
-    fromaddr = email
-    toaddr = email
 
     try:
-        msg = MIMEMultipart()
-        msg['From'] = fromaddr
-        msg['To'] = toaddr
-        msg['Subject'] = data['name'] + " sent a message from your website!"
-        body = data['message'] + '\n\n Here\'s my email: ' + data['email']
-
-        msg.attach(MIMEText(body, 'plain'))
-        server = smtplib.SMTP('smtp.gmail.com', 587)
-        server.ehlo()
-        server.starttls()
-        server.ehlo()
-        server.login(email, password)
-
-        text = msg.as_string()
-        server.sendmail(fromaddr, toaddr, text)
+        with open('app/static/messages.txt', 'a') as messages:
+            messages.write('Message from ' + data['name'] + '\n\n')
+            messages.write(data['message'] + '\n\n')
+            messages.write('Messenger\'s email: ' + data['email'] + '\n\n')
+            messages.write('==========================\n\n')
     except:
         traceback.print_exc()
         status_code = 500

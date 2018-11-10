@@ -6,6 +6,7 @@
 from config import email, password
 import traceback
 import smtplib
+import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -41,4 +42,5 @@ def send_message(file):
     return success
 
 if __name__ == '__main__':
-    send_message('static/messages.txt')
+    script_dir = os.path.dirname(__file__)
+    send_message(script_dir + '/static/messages.txt')
