@@ -1,3 +1,39 @@
+.about-me-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.about-me-wrapper .text {
+    grid-column: span 8;
+}
+
+.about-me-wrapper .image {
+    grid-column: span 4;
+    justify-self: end;
+}
+
+.portfolio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.portfolio-wrapper .text {
+    grid-column: span 6;
+    grid-row: 1;
+}
+
+.portfolio-wrapper .image {
+    grid-column: span 6;
+    justify-self: end;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.portfolio-wrapper .play {
+    grid-column: span 6;
+    grid-row: 2;
+}
+
 .website-top {
     padding-top: 20%;
     color: #fbfff1;
@@ -37,6 +73,41 @@
 
 .only-print {
     display: none;
+}
+
+@media screen and (max-width: 921px) {
+    .about-me-wrapper .image {
+        grid-row: 1;
+        grid-column: span 12;
+        justify-self: center;
+    }
+
+    .about-me-wrapper .text {
+        grid-column: span 12;
+    }
+
+    .portfolio-wrapper .image {
+        grid-row: 1;
+        grid-row-end: 2;
+        grid-column: span 12;
+        justify-self: center;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-wrapper .text {
+        grid-column: span 12;
+        grid-row: 2;
+    }
+
+    .portfolio-wrapper .play {
+        grid-column: span 12;
+        grid-row: 3;
+        justify-self: center;
+    }
+
+    .website-part img {
+        margin-left: 0px !important;
+    }
 }
 
 .website-top .title {
@@ -108,15 +179,14 @@
     max-height: 400px;
     border: 1px solid #87919e;
     border-radius: 3px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin-left: 20px;
 }
 
 .website-part .google-play {
     border: 0px solid #87919e;
     max-height: 70px;
     max-width: 100%;
+    margin-left: 0px;
     left: 0;
 }
 
@@ -202,7 +272,6 @@
 .website-part .content .portfolio-entry {
     padding-bottom: 50px;
     margin-bottom: 50px;
-    height: 400px;
 }
 
 .website-footer {
