@@ -13,6 +13,8 @@ from email.mime.text import MIMEText
 def send_message(file):
     success = True
     data = open(file, 'r').read()
+    if not data:
+        return success
     fromaddr = email
     toaddr = email
 
