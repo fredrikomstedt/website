@@ -9,12 +9,29 @@ var CURRENT_IMAGE = 0;
 
 //Main function
 $(document).ready(function() {
+    preloadImages();
     initiateTop();
     initiateAboutMe();
     initiateCV();
     initiateContactMe();
     initiateFooter();
 });
+
+function preloadImages() {
+    var images = new Array();
+	function preload() {
+		for (i = 0; i < preload.arguments.length; i++) {
+			images[i] = new Image()
+			images[i].src = preload.arguments[i]
+		}
+	}
+	preload(
+		"/static/pictures/background-0.jpg",
+		"/static/pictures/background-1.jpg",
+		"/static/pictures/background-2.jpg",
+        "/static/pictures/background-3.jpg"
+	);
+}
 
 function initiateTop() {
     $("#about-me-btn").click(function() {
