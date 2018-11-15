@@ -170,10 +170,7 @@ function initiateContactMe() {
             }
 	   });
        var btn = $(this);
-       btn.prop('disabled', true);
-       window.setTimeout(function() {
-           btn.prop('disabled', false);
-       }, 5000);
+       btn.hide();
     });
 }
 
