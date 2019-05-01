@@ -94,8 +94,8 @@ function initiateAboutMe() {
     //Get my current age
     var age = getAge('1997-03-16');
     //Show text about me
-    var aboutMeText = "Hi, I'm Fredrik! I'm a " + age + " year old guy from" +
-     " Sweden, currently living in Stockholm, a place I've lived all my life." +
+    var aboutMeText = "Hi, I'm Fredrik! I'm a guy that's " + age + " years old from" +
+     " Sweden, currently living in Stockholm, a place I've lived in all my life." +
      " \n \n Growing up with my parents, my brother and a vast array of pets, " +
      "I've always had a passion for video games. I got my first GameBoy at 5 " +
      "and since then, I've been hooked. Countless hours have been spent on " +
@@ -108,7 +108,7 @@ function initiateAboutMe() {
      "lessons, and only found it more and more enjoying. After a few years, I " +
      "decided to get an electric guitar, and from there on out my love for rock " +
      "and metal music evolved. Currently, I listen to a lot of Metallica, Five " +
-     "Finger Death Punch and Alter Bridge, often while jamming along on my Explorer.\n \n" +
+     "Finger Death Punch and Alter Bridge, often while jamming along on my Explorer or ESP LTD EC-1000.\n \n" +
      "Even though the topics above are really important to me, there is nothing " +
      "I love more than golf. It is truly a sport that I can't get enough of, " +
      "whether I am out playing, watching a major, or grinding on the putting green. " +
