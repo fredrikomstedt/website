@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
         <HeaderTitle siteTitle={siteTitle}/>
         <div className={headerStyles.buttonWrapper}>
             <HeaderButton link='/cv' text='CV'/>
-            <HeaderButton link='/portfolio' text='Portfolio'/>
+            <HeaderButton link='/projects' text='Projects'/>
         </div>
     </header>
 )

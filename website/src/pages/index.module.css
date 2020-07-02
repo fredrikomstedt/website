@@ -1,0 +1,53 @@
+.wrapper {
+    font-size: 26px;
+    width: 80%;
+    padding: 50px;
+    min-height: 400px;
+    line-height: 150%;
+}
+
+.imageText {
+    padding: 5px;
+    color: white;
+    background-color: #028A0F;
+    position: relative;
+    display: inline;
+}
+
+.imageText img {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0px;
+    z-index: 1;
+}
+
+.imageText:hover img {
+    width: 250px;
+    padding: 5px;
+    background-color: #028A0F;
+}
+
+.highlightText {
+    padding: 5px;
+    color: white;
+    background-color: #10A5F5;
+    display: inline;
+}
+
+.highlightText img {
+    position: absolute;
+    width: 0px;
+    z-index: 1;
+}
+
+.highlightText:hover img {
+    width: 200px;
+}
+
+.importantText {
+    padding: 5px;
+    color: white;
+    background-color: #BC544B;
+    display: inline;
+}

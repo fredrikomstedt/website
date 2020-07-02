@@ -3,11 +3,11 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const PortfolioPage = () => (
+const ProjectsPage = () => (
   <Layout>
-    <SEO title="Portfolio" />
-    <h1>PORTFOLIO</h1>
+    <SEO title="Projects" />
+    <h1>Projects</h1>
   </Layout>
 )
 
-export default PortfolioPage
+export default ProjectsPage
