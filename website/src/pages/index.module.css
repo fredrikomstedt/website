@@ -8,6 +8,7 @@
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+    position: relative;
 }
 
 .imageText {
@@ -48,4 +49,10 @@
     background-color: #BC544B;
     display: inline;
     box-shadow: 0 6px 10px 2px #00000082;
+}
+
+.logo {
+    position: absolute;
+    width: 150px;
+    transform: translate(25px, -30px);
 }
