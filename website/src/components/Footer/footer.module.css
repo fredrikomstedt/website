@@ -16,6 +16,7 @@
 }
 
 .content {
+    position: relative;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -49,4 +50,13 @@
 .copyRight {
     flex-grow: 1;
     align-self: center;
+}
+
+.highlightCircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 200px;
 }
