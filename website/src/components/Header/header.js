@@ -2,7 +2,10 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import ContextConsumer from "../../Context"
 import headerStyles from './header.module.css'
+
+import Highlight from '../../images/highlight.png'
 
 const HeaderTitle = ({siteTitle}) => (
     <Link 
@@ -19,8 +22,17 @@ const HeaderButton = ({link, text}) => (
         to={link}
     >
         {text}
+        <HighlightCircle text={text}/>
     </Link>
 )
+
+const HighlightCircle = ({text}) => (
+    <ContextConsumer>
+      {({ data }) => (
+        data.hover[text.toUpperCase()] ? <img className={headerStyles.highlightCircle} src={Highlight} alt=''/> : null
+      )}
+    </ContextConsumer>
+  )
 
 const Header = ({ siteTitle }) => (
     <header className={headerStyles.wrapper}>

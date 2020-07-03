@@ -1,13 +1,12 @@
 import React from "react"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const CVPage = () => (
-  <Layout>
+  <div>
     <SEO title="CV" />
     <h1>CV</h1>
-  </Layout>
+  </div>
 )
 
 export default CVPage

@@ -4,6 +4,10 @@
     padding: 50px;
     min-height: 400px;
     line-height: 150%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 .imageText {
@@ -27,7 +31,7 @@
     width: 250px;
     padding: 5px;
     background-color: #028A0F;
-    box-shadow: 0 6px 10px 2px #00000082;
+    box-shadow: 0 12px 10px 2px #00000082;
 }
 
 .highlightText {
@@ -36,16 +40,6 @@
     background-color: #10A5F5;
     display: inline;
     box-shadow: 0 6px 10px 2px #00000082;
-}
-
-.highlightText img {
-    position: absolute;
-    width: 0px;
-    z-index: 1;
-}
-
-.highlightText:hover img {
-    width: 200px;
 }
 
 .importantText {
