@@ -1,0 +1,9 @@
+.wrapper {
+    width: 60%;
+    padding: 50px;
+    margin: 50px 10px;
+    min-height: 1000px;
+    position: relative;
+    border: 5px double black;
+    box-shadow: 0 6px 10px 2px #00000082;
+}
