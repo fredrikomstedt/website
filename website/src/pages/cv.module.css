@@ -1,4 +1,11 @@
+@font-face {
+    font-family: "UniSans";
+    src: url("../fonts/uni-sans/UniSansThin.otf");
+}
+
 .wrapper {
+    display: flex;
+    flex-direction: column;
     width: 60%;
     padding: 50px;
     margin: 50px 10px;
@@ -6,4 +13,49 @@
     position: relative;
     border: 5px double black;
     box-shadow: 0 6px 10px 2px #00000082;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #028A0F;
+    box-shadow: 0 6px 10px 2px #00000082;
+    align-self: center;
+}
+
+.contactWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.contactWrapper img {
+    width: 150px;
+    border-radius: 75px;
+}
+
+.contactInfo {
+    text-align: center;
+    font-family: "UniSans", "sans-serif";
+}
+
+.componentTitleText {
+    font-size: 26px;
+    padding: 5px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #10A5F5;
+    position: relative;
+    align-self: flex-start;
+    box-shadow: 0 6px 10px 2px #00000082;
+}
+
+.professionalExperienceWrapper {
+    display: flex;
+    flex-direction: column;
 }

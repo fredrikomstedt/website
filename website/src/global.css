@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "UniSans";
+    font-family: "UniSansHeavy";
     src: url("./fonts/uni-sans/Uni\ Sans\ Heavy.otf");
 }
 
 body {
     margin: 0;
-    font-family: "UniSans", sans-serif;
+    font-family: "UniSansHeavy", sans-serif;
     min-height: 100%;
     position: relative;
 }
