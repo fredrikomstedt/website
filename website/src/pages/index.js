@@ -5,7 +5,7 @@ import ContextConsumer from "../Context"
 
 import homeStyles from "./index.module.css"
 
-import Fredrik from '../images/fredrik.png'
+import Fredrik from '../images/fredrik.jpg'
 import Golfer from '../images/golfer.jpg'
 import Guitar from '../images/guitar.jpg'
 import Logo from '../images/website-logo-black.png'
