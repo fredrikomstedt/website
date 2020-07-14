@@ -86,14 +86,82 @@ const ProfessionalExperience = () => (
     </div>
 )
 
+const Education = () => (
+    <div className={cvStyles.professionalExperienceWrapper}>
+        <ComponentTitleText text='Education'/>
+        <PeriodicExperience employer='KTH Royal Institute of Technology' period='2018 - 2020' 
+            text={
+                <div>
+                    Master of Science degree in Computer Science and Engineering, with a specialization in data science and artificial intelligence.
+                </div>
+            }
+        />
+        <PeriodicExperience employer='KTH Royal Institute of Technology' period='2015 - 2018'
+            text={
+                <div>
+                    Bachelor of Science degree in Computer Science and Engineering.
+                </div>
+            }
+        />
+    </div>
+)
+
+const OtherExperience = () => (
+    <div className={cvStyles.professionalExperienceWrapper}>
+        <ComponentTitleText text='Other Experience'/>
+        <PeriodicExperience employer='Studs' period='2019 - 2020' 
+            text={
+                <div>
+                    Took part in the computer science chapter's annual travel project, in which a group of 30 students gather money to go on a trip together. <br/>
+                    <br/>
+                    Was part of the IT group, focusing on creating an app used by the group members, written in React Native.
+                </div>
+            }
+        />
+        <PeriodicExperience employer='SpexM' period='2017 - 2019' 
+            text={
+                <div>
+                    Worked with a group of 14 people in organizing and hosting parties and pub nights for other students at KTH. During my second year, I was also the manager of this group. 
+                </div>
+            }
+        />
+        <PeriodicExperience employer='KTH Computer Science Reception' period='2016 and 2017'
+            text={
+                <div>
+                    As a group mentor, took care of groups of 15 people during their first weeks at KTH, and organized events for all new students to take part in.
+                </div>
+            }
+        />
+    </div>
+)
+
+const Achievements = () => (
+    <div className={cvStyles.professionalExperienceWrapper}>
+        <ComponentTitleText text='Achievements'/>
+        <div className={cvStyles.periodicExperienceText}>
+            Recipient of KTH's Allmänna Studerandestiftelser scholarship of 2018 and 2019.<br/>
+            <br/>
+            Recipient of the 2018 Henrik Göransson Sandviken scholarship.<br/>
+            <br/>
+            Winner of the KTH Computer Science introductory programming course quicksort competition of 2016.<br/>
+            <br/>
+            Finalist in the Swedish Programming Championship of 2015 for upper secondary school students.<br/>
+            <br/>
+            Tour Champion of the 2013 Lillängen Tour.<br/>
+            <br/>
+            Club Champion of the 2013 Lillängen Short Games.
+        </div>
+    </div>
+)
+
 const CVPage = () => (
   <div className={cvStyles.wrapper}>
     <SEO title="CV" />
     <ContactInfo/>
     <ProfessionalExperience/>
-    <ComponentTitleText text='Education'/>
-    <ComponentTitleText text='Other Experience'/>
-    <ComponentTitleText text='Achievements'/>
+    <Education/>
+    <OtherExperience/>
+    <Achievements/>
   </div>
 )
 
