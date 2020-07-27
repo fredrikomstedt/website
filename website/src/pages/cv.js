@@ -154,6 +154,10 @@ const Achievements = () => (
     </div>
 )
 
+const Download = () => (
+    <div className={cvStyles.downloadButton} onClick={() => window.print()}>Download CV</div>
+)
+
 const CVPage = () => (
   <div className={cvStyles.wrapper}>
     <SEO title="CV" />
@@ -162,6 +166,7 @@ const CVPage = () => (
     <Education/>
     <OtherExperience/>
     <Achievements/>
+    <Download/>
   </div>
 )
 

@@ -3,6 +3,19 @@
     src: url("../fonts/uni-sans/UniSansThin.otf");
 }
 
+@media print {
+    .wrapper {
+        width: 100% !important;
+        border: 0px !important;
+        box-shadow: 0 0px 0px 0px !important;
+        margin: 10px !important;
+    }
+
+    .downloadButton {
+        display: none !important;
+    }
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -97,3 +110,22 @@
     font-family: "UniSans", "sans-serif";
     margin-bottom: 20px;
 }
+
+.downloadButton {
+    align-self: center;
+    text-align: center;
+    width: 160px;
+    font-size: 20px;
+    padding: 20px 20px;
+    font-family: "UniSansHeavy";
+    transition: 0.5s ease;
+    box-shadow: 0 6px 10px 2px #00000082;
+    background-color: #10A5F5;
+    color: white;
+}
+
+.downloadButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
