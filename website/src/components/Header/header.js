@@ -6,13 +6,15 @@ import ContextConsumer from "../../Context"
 import headerStyles from './header.module.css'
 
 import Highlight from '../../images/highlight.png'
+import Logo from '../../images/website-logo.png'
 
 const HeaderTitle = ({siteTitle}) => (
     <Link 
         className={headerStyles.title}
         to='/'
     >
-        {siteTitle}
+        <img className={headerStyles.logo} src={Logo} alt=''/>
+        <div className={headerStyles.siteTitleText}>{siteTitle}</div>
     </Link>
 )
 
