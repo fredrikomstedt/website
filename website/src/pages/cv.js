@@ -155,7 +155,15 @@ const Achievements = () => (
 )
 
 const Download = () => (
-    <div className={cvStyles.downloadButton} onClick={() => window.print()}>Download CV</div>
+    <div 
+        role="button"
+        tabIndex={0}
+        className={cvStyles.downloadButton} 
+        onClick={() => window.print()} 
+        onKeyDown={() => window.print()}
+    >
+        Download CV
+    </div>
 )
 
 const CVPage = () => (

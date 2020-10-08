@@ -24,6 +24,7 @@ const HighlightText = ({text}) => (
                 onMouseEnter={() => set({hover: {...data.hover, [text.toUpperCase()]: true}})}
                 onMouseLeave={() => set({hover: {...data.hover, [text.toUpperCase()]: false}})}
                 className={homeStyles.highlightText}
+                aria-hidden="true"
             >
                 {text}
             </div>
