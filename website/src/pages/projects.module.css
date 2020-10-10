@@ -33,6 +33,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    min-height: 400px;
     padding: 20px;
     margin-bottom: 50px;
     box-shadow: 0 6px 10px 2px #00000082;
@@ -44,7 +45,7 @@
  
 .projectImage {
     display: block;
-    max-width: 100%;
+    max-width: min(100%, 600px);
     max-height: 400px;
     margin: 0px 20px;
 }
@@ -69,4 +70,12 @@
 .projectText {
     font-size: 16px;
     font-family: "UniSans", "sans-serif";
+}
+
+.projectLink {
+    color: black !important;
+}
+
+.projectLink:visited {
+    color: black !important;
 }
