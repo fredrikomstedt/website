@@ -35,5 +35,8 @@ jobs:
             # SSHPASS commands to run
             run: |
                 cd ${{ secrets.PROJECT_PATH }}
+                echo "Changed directory to website directory"
                 git pull
+                echo "Updates fetched from origin"
                 gatsby build
+                echo "Website deployed"
