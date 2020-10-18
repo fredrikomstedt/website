@@ -78,4 +78,9 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## Deploying to a server
 
 These guides are useful for this purpose:
-* [Deploying Gatsby to a DigitalOcean droplet](https://www.gatsbyjs.com/docs/deploying-to-digitalocean-droplet/)
+* [Deploying Gatsby to a DigitalOcean droplet](https://www.gatsbyjs.com/docs/deploying-to-digitalocean-droplet/) (This works even if not using DigitalOcean).
+  * For more information on SSL certificates, check [this](https://www.linode.com/docs/quick-answers/websites/how-to-install-certbot-on-ubuntu-18-04/) link. It doesn't take into account certificate renewal. This can be done by using `cron` and by doing the following:
+    ```shell
+    sudo crontab -e
+    ```
+    and then updating with the following entry: `0 0 1 * * certbot renew`. This will try to update the certificates the first day of every month.
