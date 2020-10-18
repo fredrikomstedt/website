@@ -39,7 +39,7 @@ const ProfessionalExperience = () => (
                 <div>
                     Continuing my journey at Topgolf as a full-time software engineer in the game development team. <br/>
                     <br/>
-                    Currently working on the Tournament Range product by creating more user-friendly and modern interfaces to be used by our operators during events, whilst also being responsible for maintaining the Tournament Range code-base.
+                    Currently working on the Tournament Range product by creating a more user-friendly and modern interface to be used by our operators during events, whilst also being responsible for maintaining the Tournament Range code-base.
                 </div>
             }
         />
@@ -79,7 +79,7 @@ const ProfessionalExperience = () => (
                 <div>
                     Worked as a software developer on mobile applications and VR games.<br/>
                     <br/>
-                    Contributed on two mobile releases and helped set up guidelines for version control usage.
+                    Contributed on two mobile releases and helped set up guidelines for version control system usage.
                 </div>
             }
         />
