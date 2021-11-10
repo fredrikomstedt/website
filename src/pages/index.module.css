@@ -4,7 +4,7 @@
     padding: 50px;
     min-height: 400px;
     line-height: 150%;
-    -webkit-user-select: none; /* Safari */        
+    -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
@@ -14,7 +14,7 @@
 .imageText {
     padding: 5px;
     color: white;
-    background-color: #028A0F;
+    background-color: #028a0f;
     position: relative;
     display: inline;
     box-shadow: 0 6px 10px 2px #00000082;
@@ -31,14 +31,14 @@
 .imageText:hover img {
     width: 250px;
     padding: 5px;
-    background-color: #028A0F;
+    background-color: #028a0f;
     box-shadow: 0 12px 10px 2px #00000082;
 }
 
 .highlightText {
     padding: 5px;
     color: white;
-    background-color: #10A5F5;
+    background-color: #10a5f5;
     display: inline;
     box-shadow: 0 6px 10px 2px #00000082;
 }
@@ -46,7 +46,7 @@
 .importantText {
     padding: 5px;
     color: white;
-    background-color: #BC544B;
+    background-color: #bc544b;
     display: inline;
     box-shadow: 0 6px 10px 2px #00000082;
 }
