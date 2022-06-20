@@ -51,8 +51,8 @@ const Home = () => (
         <br />
         <br />
         I'm a <ImportantText text="software engineer" /> with an interest in{' '}
-        <ImportantText text="full stack development" /> and{' '}
-        <ImportantText text="data analysis" />. I'm also a sports fan and an
+        <ImportantText text="full stack development" /> and writing{' '}
+        <ImportantText text="good looking code" />. I'm also a sports fan and an
         avid <ImageText text="golfer" image={Golfer} />. Music is an important
         part of my life, and I love playing the{' '}
         <ImageText text="guitar" image={Guitar} />.
@@ -60,7 +60,7 @@ const Home = () => (
         <br />
         Currently, I am working out of my home city of{' '}
         <ImportantText text="Stockholm, Sweden" />, helping{' '}
-        <ImportantText text="Topgolf" /> revolutionize the game of golf. If you
+        <ImportantText text="Quickbit" /> bring crypto to the people. If you
         want to know more about me and my work, check out my{' '}
         <HighlightText text="CV" /> or my <HighlightText text="projects" />,
         send me an <HighlightText text="email" />, or have a look at my other{' '}

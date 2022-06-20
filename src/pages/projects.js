@@ -105,11 +105,11 @@ const ProjectsPage = () => (
             image={HannaGame}
             text={
                 <div>
-                    For my girlfriend's birthday, I decided to create a game in
-                    which Hanna (my amazing girlfriend) has to save Fredrik (me)
-                    from the evil Dr. Demon and his minions. The game was
-                    written using GameMaker Studio 2, and everything from
-                    graphics to code was created by me.
+                    For my ex-girlfriend's birthday, I decided to create a game
+                    in which Hanna has to save Fredrik (me) from the evil Dr.
+                    Demon and his minions. The game was written using GameMaker
+                    Studio 2, and everything from graphics to code was created
+                    by me.
                     <br />
                     <br />
                     The source code for Hanna is available{' '}
