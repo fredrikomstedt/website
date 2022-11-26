@@ -36,7 +36,7 @@ const ProfessionalExperience = () => (
         <ComponentTitleText text="Professional Experience" />
         <PeriodicExperience
             employer="Quickbit"
-            period="AUG 2020 - MAY 2022"
+            period="JUN 2022 - NOW"
             text={
                 <div>
                     Taking on the role as a backend software engineer at
@@ -44,10 +44,10 @@ const ProfessionalExperience = () => (
                     working with the Quickbit app that allows people to buy,
                     exchange and use crypto in different ways. <br />
                     <br />
-                    This work involves handling important data in a secure
-                    manner, while interacting with third-party integrations to
-                    handle the different aspects required to work with monetary
-                    currencies.
+                    This work involves managing and creating the data consumed
+                    by the Quickbit app, partly through integrating with third
+                    party providers, as well as maintaining a large backend
+                    codebase by working towards a micro-service architecture.
                 </div>
             }
         />
