@@ -43,8 +43,8 @@ const ProjectsPage = () => (
                 <div>
                     When I bought my car, I thought it might be useful for
                     friends or family to have a way of calculating the costs for
-                    borrowing my car. Therefore, I built a website for doing
-                    exactly that!
+                    borrowing it. Therefore, I built a website for doing exactly
+                    that!
                     <br />
                     <br />
                     You can find the webpage at{' '}
@@ -54,7 +54,7 @@ const ProjectsPage = () => (
                     />{' '}
                     and find the source code{' '}
                     <ProjectLink
-                        link={'https://github.com/xaril/brum'}
+                        link={'https://github.com/fredrikomstedt/brum'}
                         linkText={'here'}
                     />
                     .
@@ -114,7 +114,7 @@ const ProjectsPage = () => (
                     <br />
                     The source code for Hanna is available{' '}
                     <ProjectLink
-                        link={'https://github.com/Xaril/hanna'}
+                        link={'https://github.com/fredrikomstedt/hanna'}
                         linkText={'here'}
                     />
                     .
@@ -152,7 +152,9 @@ const ProjectsPage = () => (
                     well, finishing in the top 3 in regards to all terrains
                     tested. More info can be found{' '}
                     <ProjectLink
-                        link={'https://github.com/Xaril/ai-agent-assignment-1'}
+                        link={
+                            'https://github.com/fredrikomstedt/ai-agent-assignment-1'
+                        }
                         linkText={'here'}
                     />
                     .
@@ -192,7 +194,7 @@ const ProjectsPage = () => (
                     GitHub containing some of my work (including this website).
                     It can be found{' '}
                     <ProjectLink
-                        link={'https://github.com/xaril'}
+                        link={'https://github.com/fredrikomstedt'}
                         linkText={'here'}
                     />
                     .
