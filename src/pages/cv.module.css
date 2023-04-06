@@ -24,30 +24,6 @@
         margin: 10px !important;
         padding: 10px !important;
     }
-
-    .title {
-        box-shadow: 0 0px 0px 0px !important;
-        color: black !important;
-        background-color: white !important;
-    }
-
-    .componentTitleText {
-        box-shadow: 0 0px 0px 0px !important;
-        color: black !important;
-        background-color: white !important;
-    }
-
-    .employer {
-        box-shadow: 0 0px 0px 0px !important;
-        color: black !important;
-        background-color: white !important;
-    }
-
-    .periodicPeriod {
-        box-shadow: 0 0px 0px 0px !important;
-        color: black !important;
-        background-color: white !important;
-    }
 }
 
 .wrapper {
@@ -85,12 +61,11 @@
 
 .contactInfo {
     text-align: center;
-    font-family: 'UniSans', 'sans-serif';
+    font-family: 'Rubik', 'sans-serif';
 }
 
 .componentTitleText {
     font-size: 26px;
-    padding: 5px;
     margin-bottom: 15px;
     position: relative;
     align-self: flex-start;
@@ -115,7 +90,6 @@
 
 .employer {
     font-size: 18px;
-    padding: 5px;
     margin-bottom: 15px;
     text-align: left;
 }
@@ -129,7 +103,7 @@
 
 .periodicExperienceText {
     font-size: 16px;
-    font-family: 'UniSans', 'sans-serif';
+    font-family: 'Rubik', 'sans-serif';
     margin-bottom: 20px;
 }
 
