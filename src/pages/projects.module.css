@@ -42,7 +42,7 @@
 .projectWrapper:nth-child(odd) {
     flex-direction: row-reverse;
 }
- 
+
 .projectImage {
     display: block;
     max-width: min(100%, 600px);
@@ -55,7 +55,6 @@
     flex-grow: 1;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .projectTitle {
@@ -63,13 +62,13 @@
     padding: 5px;
     margin-bottom: 15px;
     color: white;
-    background-color: #10A5F5;
+    background-color: #10a5f5;
     box-shadow: 0 6px 10px 2px #00000082;
 }
 
 .projectText {
     font-size: 16px;
-    font-family: "UniSans", "sans-serif";
+    font-family: 'UniSans', 'sans-serif';
 }
 
 .projectLink {

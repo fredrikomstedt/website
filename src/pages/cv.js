@@ -39,15 +39,19 @@ const ProfessionalExperience = () => (
             period="JUN 2022 - NOW"
             text={
                 <div>
-                    Taking on the role as a backend software engineer at
-                    Quickbit, helping bring crypto to the people. Specifically
-                    working with the Quickbit app that allows people to buy,
-                    exchange and use crypto in different ways. <br />
+                    Taking on the role as a fullstack software engineer at
+                    Quickbit, helping bring crypto to the people. Initially
+                    worked mainly with the backend of the Quickbit app that
+                    allows people to buy, exchange and use crypto in different
+                    ways. Have now transitioned into a fullstack role that
+                    involves multiple of Quickbit's products. <br />
                     <br />
                     This work involves managing and creating the data consumed
-                    by the Quickbit app, partly through integrating with third
-                    party providers, as well as maintaining a large backend
-                    codebase by working towards a micro-service architecture.
+                    by the Quickbit products, partly through integrating with
+                    third party providers, as well as maintaining a large
+                    backend codebase by working towards a micro-service
+                    architecture. Moreover, it includes creating the user
+                    interfaces interacting with these backend services.
                 </div>
             }
         />

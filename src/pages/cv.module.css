@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "UniSans";
-    src: url("../fonts/uni-sans/UniSansThin.otf");
+    font-family: 'UniSans';
+    src: url('../fonts/uni-sans/UniSansThin.otf');
 }
 
 @media print {
@@ -67,9 +67,6 @@
     text-align: center;
     padding: 5px;
     margin-bottom: 20px;
-    color: white;
-    background-color: #028A0F;
-    box-shadow: 0 6px 10px 2px #00000082;
     align-self: center;
 }
 
@@ -88,18 +85,15 @@
 
 .contactInfo {
     text-align: center;
-    font-family: "UniSans", "sans-serif";
+    font-family: 'UniSans', 'sans-serif';
 }
 
 .componentTitleText {
     font-size: 26px;
     padding: 5px;
     margin-bottom: 15px;
-    color: white;
-    background-color: #10A5F5;
     position: relative;
     align-self: flex-start;
-    box-shadow: 0 6px 10px 2px #00000082;
 }
 
 .professionalExperienceWrapper {
@@ -123,9 +117,6 @@
     font-size: 18px;
     padding: 5px;
     margin-bottom: 15px;
-    color: white;
-    background-color: #BC544B;
-    box-shadow: 0 6px 10px 2px #00000082;
     text-align: left;
 }
 
@@ -133,15 +124,12 @@
     font-size: 18px;
     padding: 5px;
     margin-bottom: 15px;
-    color: white;
-    background-color: #BC544B;
-    box-shadow: 0 6px 10px 2px #00000082;
     text-align: right;
 }
 
 .periodicExperienceText {
     font-size: 16px;
-    font-family: "UniSans", "sans-serif";
+    font-family: 'UniSans', 'sans-serif';
     margin-bottom: 20px;
 }
 
@@ -151,10 +139,10 @@
     width: 160px;
     font-size: 20px;
     padding: 20px 20px;
-    font-family: "UniSansHeavy";
+    font-family: 'UniSansHeavy';
     transition: 0.5s ease;
     box-shadow: 0 6px 10px 2px #00000082;
-    background-color: #10A5F5;
+    background-color: #10a5f5;
     color: white;
 }
 
@@ -162,4 +150,3 @@
     cursor: pointer;
     transform: scale(1.1);
 }
-
