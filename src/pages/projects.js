@@ -9,6 +9,7 @@ import PPP from '../images/ppp.jpg';
 import SelfDrivingCar from '../images/self-driving-car.gif';
 import ValkyrGames from '../images/valkyr-games.png';
 import GitHub from '../images/GitHub_Logo.png';
+import Access from '../images/toptracer-access.jpg';
 
 import projectsStyles from './projects.module.css';
 
@@ -36,6 +37,30 @@ const ProjectLink = ({ link, linkText }) => (
 const ProjectsPage = () => (
     <div className={projectsStyles.wrapper}>
         <SEO title="Projects" />
+        <Project
+            title={'Toptracer Access'}
+            image={Access}
+            text={
+                <div>
+                    Created during a so called "experimental week", Toptracer
+                    Access was a product to accompany the Tournament Range suite
+                    that Toptracer offered. Its goal was to allow anyone
+                    anywhere to see professional players' shots at tournament
+                    range events (compared to it only being possible on LED
+                    screens at the event previously).
+                    <br />
+                    <br />
+                    The idea for this product was conceived by me, and it was
+                    designed and developed by me and two awesome colleagues.
+                    During a second experimental week, it was also deployed to{' '}
+                    <ProjectLink
+                        link={'https://access.toptracer.com'}
+                        linkText={'access.omstedt.com'}
+                    />
+                    , but this doesn't seem to be the case any longer.
+                </div>
+            }
+        />
         <Project
             title={'Brum'}
             image={Brum}
