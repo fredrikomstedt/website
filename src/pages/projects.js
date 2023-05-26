@@ -55,7 +55,7 @@ const ProjectsPage = () => (
                     During a second experimental week, it was also deployed to{' '}
                     <ProjectLink
                         link={'https://access.toptracer.com'}
-                        linkText={'access.omstedt.com'}
+                        linkText={'access.toptracer.com'}
                     />
                     , but this doesn't seem to be the case any longer.
                 </div>
