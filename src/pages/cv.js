@@ -35,6 +35,25 @@ const ProfessionalExperience = () => (
     <div className={cvStyles.professionalExperienceWrapper}>
         <ComponentTitleText text="Professional Experience" />
         <PeriodicExperience
+            employer="The Way Technologies"
+            period="MAR 2023 - NOW"
+            text={
+                <div>
+                    One of the co-founders of The Way, a small IT-consultancy
+                    firm based in Stockholm, Sweden. We advocate for a holistic,
+                    problem-solving mindset that underlines the importance of
+                    clear communication. Drawing from our vast experience in
+                    various industries and technical areas, we're prepared to
+                    address a broad range of challenges. Our previous experience
+                    includes projects such as payment solutions for
+                    cryptocurrencies, real-time 3D graphics software for live
+                    sports broadcasts, web applications used by millions of
+                    users, secure backend systems for the health tech industry
+                    and machine learning models for text recognition.
+                </div>
+            }
+        />
+        <PeriodicExperience
             employer="Quickbit"
             period="JUN 2022 - NOW"
             text={
