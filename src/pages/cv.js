@@ -54,23 +54,27 @@ const ProfessionalExperience = () => (
             }
         />
         <PeriodicExperience
-            employer="Quickbit"
+            employer="Valuno"
             period="JUN 2022 - NOW"
             text={
                 <div>
-                    Taking on the role as a fullstack software engineer at
-                    Quickbit, helping bring crypto to the people. Initially
-                    worked mainly with the backend of the Quickbit app that
-                    allows people to buy, exchange and use crypto in different
-                    ways. Have now transitioned into a fullstack role that
-                    involves multiple of Quickbit's products. <br />
+                    Working as a senior fullstack software engineer on all of
+                    Valuno's products, including the Quickbit app for consumers
+                    to purchase and hold crypto, as well as the Quickbit Pay
+                    ecosystem allowing business merchants to accept payments in
+                    crypto. <br /> <br />
+                    During my time at Valuno I have become a central figure in
+                    turning business problems into technical solutions. I am
+                    heavily involved in meetings with internal and external
+                    stakeholders, and I lead several development projects and
+                    contribute to both the codebase and the processes within the
+                    team. <br />
                     <br />
-                    This work involves managing and creating the data consumed
-                    by the Quickbit products, partly through integrating with
-                    third party providers, as well as maintaining a large
-                    backend codebase by working towards a micro-service
-                    architecture. Moreover, it includes creating the user
-                    interfaces interacting with these backend services.
+                    Highlights include adapting the Quickbit Pay product to an
+                    onramp in a couple months, which improved an already
+                    existing flow significantly and boosted the revenue of the
+                    company from essentially zero to a million dollar average
+                    daily volume because of it.
                 </div>
             }
         />
