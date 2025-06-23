@@ -18,10 +18,25 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      # Runs a set of commands using the runners shell
-      - name: Deploy on live
+      # Set up Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      # Build the Gatsby site
+      - name: Build Gatsby site
+        run: yarn build
+
+      # Deploy built files to server
+      - name: Deploy to server
         uses: matheusvanzan/sshpass-action@v1
         with:
             # SSHPASS host
@@ -32,9 +47,21 @@ jobs:
             password: ${{ secrets.USER_PASSWORD }}
             # SSHPASS commands to run
             run: |
-                cd ${{ secrets.PROJECT_PATH }}
-                echo "Changed directory to website directory"
-                git pull
-                echo "Updates fetched from origin"
-                gatsby build
-                echo "Website deployed"
+                # Create backup of current site (optional)
+                if [ -d "${{ secrets.PROJECT_PATH }}" ]; then
+                  mv "${{ secrets.PROJECT_PATH }}" "${{ secrets.PROJECT_PATH }}.backup.$(date +%Y%m%d_%H%M%S)"
+                fi
+                # Create project directory
+                mkdir -p "${{ secrets.PROJECT_PATH }}"
+                echo "Prepared deployment directory"
+
+      # Copy built files to server using scp
+      - name: Copy files to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.USER_NAME }}
+          password: ${{ secrets.USER_PASSWORD }}
+          source: "public/*"
+          target: ${{ secrets.PROJECT_PATH }}
+          strip_components: 1
