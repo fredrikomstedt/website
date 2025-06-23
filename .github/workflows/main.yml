@@ -36,24 +36,18 @@ jobs:
         run: yarn build
 
       # Deploy built files to server
-      - name: Deploy to server
+      - name: Prepare server directory
         uses: matheusvanzan/sshpass-action@v1
         with:
-            # SSHPASS host
             host: ${{ secrets.SERVER_IP }}
-            # SSHPASS username
             username: ${{ secrets.USER_NAME }}
-            # SSHPASS password
             password: ${{ secrets.USER_PASSWORD }}
-            # SSHPASS commands to run
             run: |
-                # Create backup of current site (optional)
-                if [ -d "${{ secrets.PROJECT_PATH }}" ]; then
-                  mv "${{ secrets.PROJECT_PATH }}" "${{ secrets.PROJECT_PATH }}.backup.$(date +%Y%m%d_%H%M%S)"
-                fi
-                # Create project directory
-                mkdir -p "${{ secrets.PROJECT_PATH }}"
-                echo "Prepared deployment directory"
+              if [ -d "${{ secrets.PROJECT_PATH }}" ]; then
+                mv "${{ secrets.PROJECT_PATH }}" "${{ secrets.PROJECT_PATH }}.backup.$(date +%Y%m%d_%H%M%S)"
+              fi
+              mkdir -p "${{ secrets.PROJECT_PATH }}"
+              echo "Prepared deployment directory"
 
       # Copy built files to server using scp
       - name: Copy files to server
