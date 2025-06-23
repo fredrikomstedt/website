@@ -35,19 +35,14 @@ jobs:
       - name: Build Gatsby site
         run: yarn build
 
-      # Deploy built files to server
+      # Prepare server directory
       - name: Prepare server directory
         uses: matheusvanzan/sshpass-action@v1
         with:
             host: ${{ secrets.SERVER_IP }}
             username: ${{ secrets.USER_NAME }}
             password: ${{ secrets.USER_PASSWORD }}
-            run: |
-              if [ -d "${{ secrets.PROJECT_PATH }}" ]; then
-                mv "${{ secrets.PROJECT_PATH }}" "${{ secrets.PROJECT_PATH }}.backup.$(date +%Y%m%d_%H%M%S)"
-              fi
-              mkdir -p "${{ secrets.PROJECT_PATH }}"
-              echo "Prepared deployment directory"
+            run: mkdir -p "${{ secrets.PROJECT_PATH }}"
 
       # Copy built files to server using scp
       - name: Copy files to server
