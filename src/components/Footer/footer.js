@@ -3,7 +3,7 @@ import React from 'react';
 import { FaRegEnvelope, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 import ContextConsumer from '../../Context';
-import footerStyles from './footer.module.css';
+import * as footerStyles from './footer.module.css';
 
 import Highlight from '../../images/highlight.png';
 

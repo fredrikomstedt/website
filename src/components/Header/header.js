@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import ContextConsumer from '../../Context';
-import headerStyles from './header.module.css';
+import * as headerStyles from './header.module.css';
 
 import Highlight from '../../images/highlight.png';
 import Logo from '../../images/website-logo.png';

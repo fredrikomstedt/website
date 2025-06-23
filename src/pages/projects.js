@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 import Brum from '../images/brum.png';
 import MasterThesis from '../images/master-thesis.png';
@@ -11,7 +11,7 @@ import ValkyrGames from '../images/valkyr-games.png';
 import GitHub from '../images/GitHub_Logo.png';
 import Access from '../images/toptracer-access.jpg';
 
-import projectsStyles from './projects.module.css';
+import * as projectsStyles from './projects.module.css';
 
 const Project = ({ title, image, text }) => (
     <div className={projectsStyles.projectWrapper}>
@@ -36,7 +36,7 @@ const ProjectLink = ({ link, linkText }) => (
 
 const ProjectsPage = () => (
     <div className={projectsStyles.wrapper}>
-        <SEO title="Projects" />
+        <Seo title="Projects" />
         <Project
             title={'Toptracer Access'}
             image={Access}

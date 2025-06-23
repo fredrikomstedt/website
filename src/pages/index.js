@@ -1,9 +1,9 @@
 import React from 'react';
 
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import ContextConsumer from '../Context';
 
-import homeStyles from './index.module.css';
+import * as homeStyles from './index.module.css';
 
 import Fredrik from '../images/fredrik.jpg';
 import Golfer from '../images/golfer.jpg';
@@ -46,7 +46,7 @@ const ImportantText = ({ text }) => (
 
 const Home = () => (
     <div className={homeStyles.wrapper}>
-        <SEO title="Home" />
+        <Seo title="Home" />
         Hi, I'm <ImageText text="Fredrik" image={Fredrik} />!
         <br />
         <br />

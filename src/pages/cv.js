@@ -1,8 +1,8 @@
 import React from 'react';
 
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
-import cvStyles from './cv.module.css';
+import * as cvStyles from './cv.module.css';
 
 const ContactInfo = () => (
     <div className={cvStyles.contactWrapper}>
@@ -282,7 +282,7 @@ const Download = () => (
 
 const CVPage = () => (
     <div className={cvStyles.wrapper}>
-        <SEO title="CV" />
+        <Seo title="CV" />
         <ContactInfo />
         <ProfessionalExperience />
         <Education />
