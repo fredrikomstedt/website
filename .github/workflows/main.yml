@@ -42,7 +42,7 @@ jobs:
             host: ${{ secrets.SERVER_IP }}
             username: ${{ secrets.USER_NAME }}
             password: ${{ secrets.USER_PASSWORD }}
-            run: mkdir -p "${{ secrets.PROJECT_PATH }}"
+            run: mkdir -p "${{ secrets.PROJECT_PATH }}/public"
 
       # Copy built files to server using scp
       - name: Copy files to server
@@ -52,5 +52,5 @@ jobs:
           username: ${{ secrets.USER_NAME }}
           password: ${{ secrets.USER_PASSWORD }}
           source: "public/*"
-          target: ${{ secrets.PROJECT_PATH }}
+          target: ${{ secrets.PROJECT_PATH }}/public
           strip_components: 1
