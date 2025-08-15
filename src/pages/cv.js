@@ -39,17 +39,22 @@ const ProfessionalExperience = () => (
             period="MAR 2023 - NOW"
             text={
                 <div>
-                    One of the co-founders of The Way, a small IT-consultancy
-                    firm based in Stockholm, Sweden. We advocate for a holistic,
-                    problem-solving mindset that underlines the importance of
-                    clear communication. Drawing from our vast experience in
-                    various industries and technical areas, we're prepared to
-                    address a broad range of challenges. Our previous experience
-                    includes projects such as payment solutions for
-                    cryptocurrencies, real-time 3D graphics software for live
-                    sports broadcasts, web applications used by millions of
-                    users, secure backend systems for the health tech industry
-                    and machine learning models for text recognition.
+                    The Way is a small IT-consultancy firm founded by 
+                    me and three of my university friends, based in 
+                    Stockholm, Sweden. We started this company because 
+                    we knew we work really well together and wanted to 
+                    continue doing so. <br /> <br/>
+                    We are problem solvers first, software engineers 
+                    second. We shine when it comes to discussing needs 
+                    and translating those to technical solutions that 
+                    are understandable by stakeholders. With that said, 
+                    we are also comfortable across the entire stack and 
+                    within multiple domains, be it hyped up AI products 
+                    or traditional web development. Our experience 
+                    includes financial services transacting millions 
+                    daily, real-time 3D graphics at major live sports 
+                    broadcasts, backend systems in health tech, AI 
+                    systems for text and icon recognition, and much more.
                 </div>
             }
         />
