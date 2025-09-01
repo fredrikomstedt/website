@@ -39,41 +39,52 @@ const ProfessionalExperience = () => (
             period="MAR 2023 - NOW"
             text={
                 <div>
-                    The Way is a small IT-consultancy firm founded by 
-                    me and three of my university friends, based in 
-                    Stockholm, Sweden. We started this company because 
-                    we knew we work really well together and wanted to 
-                    continue doing so. <br /> <br/>
-                    We are problem solvers first, software engineers 
-                    second. We shine when it comes to discussing needs 
-                    and translating those to technical solutions that 
-                    are understandable by stakeholders. With that said, 
-                    we are also comfortable across the entire stack and 
-                    within multiple domains, be it hyped up AI products 
-                    or traditional web development. Our experience 
-                    includes financial services transacting millions 
-                    daily, real-time 3D graphics at major live sports 
-                    broadcasts, backend systems in health tech, AI 
-                    systems for text and icon recognition, and much more.
+                    The Way is a small IT-consultancy firm founded by me and
+                    three of my university friends, based in Stockholm, Sweden.
+                    We started this company because we knew we work really well
+                    together and wanted to continue doing so. <br /> <br />
+                    We are problem solvers first, software engineers second. We
+                    shine when it comes to discussing needs and translating
+                    those to technical solutions that are understandable by
+                    stakeholders. With that said, we are also comfortable across
+                    the entire stack and within multiple domains, be it hyped up
+                    AI products or traditional web development. Our experience
+                    includes financial services transacting millions daily,
+                    real-time 3D graphics at major live sports broadcasts,
+                    backend systems in health tech, AI systems for text and icon
+                    recognition, and much more.
+                </div>
+            }
+        />
+        <PeriodicExperience
+            employer="Visgrid"
+            period="SEP 2025 - NOW"
+            text={
+                <div>
+                    Working as a fullstack software engineer at Visgrid, a
+                    company working on drone detection using camera
+                    technologies. <br /> <br />
+                    TODO: Add more details about my role and responsibilities
+                    once I've settled in. ;)
                 </div>
             }
         />
         <PeriodicExperience
             employer="Valuno"
-            period="JUN 2022 - NOW"
+            period="JUN 2022 - AUG 2025"
             text={
                 <div>
-                    Working as a senior fullstack software engineer on all of
+                    Worked as a senior fullstack software engineer on all of
                     Valuno's products, including the Quickbit app for consumers
                     to purchase and hold crypto, as well as the Quickbit Pay
                     ecosystem allowing business merchants to accept payments in
                     crypto. <br /> <br />
-                    During my time at Valuno I have become a central figure in
-                    turning business problems into technical solutions. I am
+                    During my time at Valuno I became a central figure in
+                    turning business problems into technical solutions. I was
                     heavily involved in meetings with internal and external
-                    stakeholders, and I lead several development projects and
-                    contribute to both the codebase and the processes within the
-                    team. <br />
+                    stakeholders, and I led several development projects and
+                    contributed to both the codebase and the processes within
+                    the team. <br />
                     <br />
                     Highlights include adapting the Quickbit Pay product to an
                     onramp in a couple months, which improved an already

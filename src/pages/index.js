@@ -60,10 +60,10 @@ const Home = () => (
         <br />
         Currently, I am working out of my home city of{' '}
         <ImportantText text="Stockholm, Sweden" />, helping{' '}
-        <ImportantText text="Quickbit" /> bring crypto to the people. If you
-        want to know more about me and my work, check out my{' '}
-        <HighlightText text="CV" /> or my <HighlightText text="projects" />,
-        send me an <HighlightText text="email" />, or have a look at my other{' '}
+        <ImportantText text="Visgrid" /> make the world safer. If you want to
+        know more about me and my work, check out my <HighlightText text="CV" />{' '}
+        or my <HighlightText text="projects" />, send me an{' '}
+        <HighlightText text="email" />, or have a look at my other{' '}
         <HighlightText text="pages" />.
         <br />
         <br />
